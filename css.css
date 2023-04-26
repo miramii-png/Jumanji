@@ -1,3 +1,4 @@
+/* Часть Родиона*/
 body {
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@ border-radius: 10px;
     width: 1425px;
   }
   
-  input[type="text"] {
+  input[class="search"] {
     width: 433px;
     padding: 10px 40px 10px 10px;
     box-sizing: border-box;
@@ -86,3 +87,136 @@ border-radius: 10px;
     text-align: center;
     font-size: xx-large;
   }
+
+/* Часть Кирилла*/
+  .vopros{
+position: absolute;
+width: 357px;
+height: 51px;
+left: 792px;
+top: 2411px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 51px;
+
+color: #0B2447;
+}
+  .vopros1{
+position: absolute;
+width: 419px;
+height: 24px;
+left: 751px;
+top: 2492px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+white-space: nowrap;
+
+color: #0B2447;
+
+}
+  .soglasie{
+
+position: absolute;
+width: 713px;
+height: 0px;
+left: 631px;
+top: 2766px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 0px;
+text-align: center;
+
+color: #0B2447;
+  
+}
+  .polevvoda{
+box-sizing: border-box;
+
+position: absolute;
+width: 925px;
+height: 80px;
+left: 498px;
+top: 2546px;
+
+background: #FFFFFF;
+border: 2px solid #576CBC;
+border-radius: 15px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 37px;
+color: #BABABA;
+
+}
+  .polevvoda1{
+box-sizing: border-box;
+
+position: absolute;
+width: 925px;
+height: 80px;
+left: 498px;
+top: 2656px;
+
+background: #FFFFFF;
+border: 2px solid #576CBC;
+border-radius: 15px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 37px;
+color: #BABABA;
+
+}
+  .checkbox{
+    box-sizing: border-box;
+
+position: absolute;
+width: 34px;
+height: 34px;
+left: 577px;
+top: 2766px;
+
+border: 1px solid #0B2447;
+border-radius: 10px;
+  }
+
+
+  
+  footer {
+    position: absolute;
+    width: 1920px;
+    height: 270px;
+    left: 0px;
+    top: 3025px;
+    
+    background: #0B2447;
+  }
+  .logoniz img {
+    width: 65px;
+    height: 50px;
+    margin-left: 100px;
+  }
+  
+  
+  #nazvanie_niz {
+    
+    color:#fff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin-left: 50px;
+  }
+  
