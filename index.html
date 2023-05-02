@@ -29,19 +29,74 @@
         <h1 id="tver">Тверская область</h1>
         <p id="gorod">10 городов, которые стоит посетить</p>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <!--томас-->
+      <div class="textalltur">
+        <h1 class="alltur">Посмотрите все направления туров</h1>
+        <h3 class="twotext">Насладитесь красотой невероятных пейзажей Тверской области</h3>
+      </div>
+      <div class="carousel-container">
+        <button id="left" class="carousel-button left" disabled>&lt;</button>
+        <div class="carousel-photos">
+          <a href="tver.html"><img class="carousel-photo" src="photo1.svg"></a>
+          <img class="carousel-photo" src="photo2.svg">
+          <img class="carousel-photo" src="photo3.svg">
+          <img class="carousel-photo" src="photo4.svg">
+          <img class="carousel-photo" src="photo5.svg">
+          <img class="carousel-photo" src="photo6.svg">
+          <img class="carousel-photo" src="photo7.svg">
+          <img class="carousel-photo" src="photo8.svg">
+          <img class="carousel-photo" src="photo9.svg">
+          <img class="carousel-photo" src="photo10.svg">
+        </div>
+        <button id="right" class="carousel-button right">&gt;</button>
+      </div>
+      <script>
+        const carouselPhotos = document.querySelector('.carousel-photos');
+        const carouselLeftButton = document.querySelector('.carousel-button.left');
+        const carouselRightButton = document.querySelector('.carousel-button.right');
+        const photoWidth = document.querySelector('.carousel-photo').offsetWidth;
+        let currentPosition = 0;
+  
+        function updateButtonStatus() {
+          if (currentPosition === 0) {
+            carouselLeftButton.disabled = true;
+          } else {
+            carouselLeftButton.disabled = false;
+          }
+  
+          if (currentPosition === -(photoWidth * 9)) {
+            carouselRightButton.disabled = true;
+          } else {
+            carouselRightButton.disabled = false;
+          }
+        }
+        function moveLeft() {
+          if (currentPosition < 0) {
+            currentPosition += photoWidth;
+            carouselPhotos.style.transform = `translateX(${currentPosition}px)`;
+            updateButtonStatus();
+          }
+        }
+  
+        function moveRight() {
+          if (currentPosition > -(photoWidth * 9)) {
+            currentPosition -= photoWidth;
+            carouselPhotos.style.transform = `translateX(${currentPosition}px)`;
+            updateButtonStatus();
+          }
+        }
+  
+        updateButtonStatus();
+  
+        carouselLeftButton.addEventListener('click', () => {
+          moveLeft();
+        });
+  
+        carouselRightButton.addEventListener('click', () => {
+          moveRight();
+        });
+      </script>
+      <!--конец томаса-->
 <div>
   <h2 class="vopros" >Хочешь с нами?</h2>
   <h3 class="vopros1">Оставь заявку, мы обязательно ответим!</h3>
