@@ -1,9 +1,24 @@
+/* ВАНИНА ЗАЛУПА*/
+.scrollup {
+  width:40px;
+  height:40px;
+  opacity:0.3;
+  position:fixed;
+  bottom:50px;
+  right:20px;
+  display:none;
+  text-indent:-9999px;
+  background: url('icon_top.png') no-repeat;
+}
+/* КОНЕЦ ВАНИНОЙ ЗАЛУПЫ*/
+
 /* Часть Родиона*/
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
   }
+
   
   header {
     display: flex;
@@ -221,7 +236,7 @@ border-radius: 10px;
   
   footer {
     position: absolute;
-    width: 1920px;
+    width: 1900px;
     height: 270px;
     left: 0px;
     top: 3025px;

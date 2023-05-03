@@ -7,10 +7,33 @@
     <title>Вокруг света</title>
     <link rel="stylesheet" href="css.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
+  <!--ВАНИНА ЗАЛУПА--> 
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+
+    });
+    </script>
+<!--КОНЕЦ ВАНИНОЙ ЗАЛУПЫ--> 
+
+
+
     <header>
-        
         <img class="logo" src="logo.png" alt="logo" >
         <p class="nazvanie">Вокруг света</p>
         <div class="input-container">
@@ -30,6 +53,7 @@
         <p id="gorod">10 городов, которые стоит посетить</p>
       </div>
       <!--томас-->
+      <a href="#" class="scrollup">Наверх</a>
       <div class="textalltur">
         <h1 class="alltur">Посмотрите все направления туров</h1>
         <h3 class="twotext">Насладитесь красотой невероятных пейзажей Тверской области</h3>
@@ -116,7 +140,8 @@
   <p class="prava">© Вокруг света 2023 Все права защищены</p>
 </footer>
       
-      
-      
+    <!--ВАНИНА ЗАЛУПА-->  
+<a href="#" class="scrollup">Наверх</a>   
+    <!--КОНЕЦ ВАНИНОЙ ЗАЛУПЫ-->  
 </body>
 </html>
