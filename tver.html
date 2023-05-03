@@ -7,8 +7,29 @@
     <link rel="stylesheet" href="tver.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Тверь</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
+      <!--ВАНИНА ЗАЛУПА--> 
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+
+    });
+    </script>
+<!--КОНЕЦ ВАНИНОЙ ЗАЛУПЫ--> 
     <header>
         
         <img class="logo" src="logo.png" alt="logo" >
@@ -124,5 +145,10 @@
         </div>
         <p class="prava">© Вокруг света 2023 Все права защищены</p>
       </footer>
+
+          <!--ВАНИНА ЗАЛУПА-->  
+<a href="#" class="scrollup">Наверх</a>   
+<!--КОНЕЦ ВАНИНОЙ ЗАЛУПЫ-->  
+
 </body>
 </html>
