@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вышний Волочек</title>
+    <link rel="stylesheet" href="vv.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+
+        });
+        </script>
+
+    <!--header-->
+    <header>
+        <img class="logo" src="logo.png" alt="logo" >
+        <p class="nazvanie">Вокруг света</p>
+    <div class="input-container">
+        <input class="search" id="search-input" type="text" placeholder="Поиск..." >
+        <button type="button" class="icon-button"></button>
+    </div>
+        <img class="burger" src="burger.png" alt="">
+      </header>
+    <!--header конец-->
+    <!--city-->
+    <div>
+        <img src="mainvv.png" alt="" class="bg1">
+    </div>
+    <div class="bg1-text">
+        <h1 id="vv">Вышний Волочек</h1>
+    </div>
+    <!--city конец-->
+    <!--attractions-->
+         <!--1-->
+    <div class="attractions">
+        <center><h2 class="obozna">Дача Рябушинских</h2></center>
+    <div class="block">
+    <div class="left">
+        <img src="vv1.png" alt="">
+    </div>
+    <div class="right">
+        <p class="attext" style="line-height:1.7;">Особняк купца Рябушинского, возведённый в XIX веке в стиле модерн, находится на Садовой площади. Это двухэтажное здание каменной постройки с элементами древесной отделки. Несмотря на ветхий вид, дом сохранил былую пестроту и своеобразие. Над каждым окном установлен узкий козырёк с зубчатой резьбой, а над обширным крыльцом нависает шатровая кровля. Внутри дачи сохранились роскошные интерьеры: массивные двери, высокие потолки со следами лепнины и широкие лестницы с витыми перилами.</p>
+        <p class="adres" style="margin-top: 90px;">АДРЕС: г. Вышний Волочёк, ул. Нагорная.</p>    
+    </div>
+    </div>
+    </div>
+        <!--2-->
+    <div class="attractions">
+        <center><h2 class="obozna">Памятник Петру I и Сердюкову</h2></center>
+    <div class="block">
+    <div class="left">
+        <p class="attext" style="line-height:1.7;">В своей скульптуре архитектор Юрий Злотя запечатлел момент, когда гидротехник Михаил Сердюков показал императору чертёж будущей водной системы Вышнего Волочка. Пётр изображён в царском мундире со шпагой на боку и треуголкой на голове. Он внимательно смотрит на развёрнутый свиток и взмахивает правой рукой, одобряя идею Сердюкова.
+            Бронзовые скульптуры высотой в 2 метра располагаются на каменном пьедестале. Торжественное открытие необычной памятной достопримечательности города состоялось в сентябре 2006 года.</p>
+        <p class="adres" style="margin-top: 90px; margin-left: 302px;">АДРЕС: г. Вышний Волочёк, пл. Привокзальная.</p>    
+    </div>
+    <div class="right">
+        <img src="vv2.png" alt="">
+    </div>
+    </div>
+    </div>
+        <!--3-->
+    <div class="attractions">
+        <center><h2 class="obozna">Памятник Екатерине II</h2></center>
+    <div class="block">
+    <div class="left">
+        <img src="vv3.png" alt="">
+    </div>
+    <div class="right">
+        <p class="attext" style="line-height:1.7;">В 1770 г. императрица Екатерина II подарила Вышнему Волочку статус города и собственный герб. В память об этом событии и был установлен памятник.
+            Екатерина горделиво восседает на престоле, подлокотники которого декорированы орлиными головами, а ножки когтистыми лапами. Сама правительница облачена в парадное одеяние, с её плеч спадает мантия из шерсти горностая. В правой руке Екатерина держит скипетр, а левой протягивает венец — символ указа об основании города Вышний Волочёк.</p>
+        <p class="adres" style="margin-top: 90px;">АДРЕС: г. Вышний Волочёк, пр. Казанский, 20.</p>    
+    </div>
+    </div>
+    </div>
+        <!--4-->
+    <div class="attractions">
+        <center><h2 class="obozna">Цнинский канал</h2></center>
+    <div class="block">
+    <div class="left">
+        <p class="attext" style="line-height:1.7;">Цнинский канал был прокопан в 1722 г. Его главной целью являлось выпрямление русла Цны. Длина канала достигает 1 км, а средняя глубина в районе городской черты колеблется около 3 м. Вдоль водоёма протянулись парковые зоны с прогулочным дорожками, удобными лавочками и мостиками через канал. Территория парков содержится в чистоте, загрязнение лесов и воды наказывается штрафом.</p>
+        <p class="adres" style="margin-top: 90px; margin-left: 448px;">Координаты: 57.587895, 34.546825.</p>    
+    </div>
+    <div class="right">
+        <img src="vv4.png" alt="">
+    </div>
+    </div>
+    </div>
+        <!--5-->
+    <div class="attractions">
+        <center><h2 class="obozna">Музей «Русские валенки»</h2></center>
+    <div class="block">
+    <div class="left">
+        <img src="vv5.png" alt="">
+    </div>
+    <div class="right">
+        <p class="attext" style="line-height:1.7;">Для жителя России валенки — обыденный элемент одежды, в котором нет ничего удивительного. Однако в Вышнем Волочке существует музей, посвящённый этой зимней обуви. Дело в том, что это единственный город, где валенки валяли вручную, по русским традициям, а не применяя станки и машины. Экспозиция музея демонстрирует приспособления для изготовления валенок, рассказывает о том, как с течением времени изменялась и совершенствовалась методика валки.</p>
+        <p class="adres" style="margin-top: 90px;">АДРЕС: г. Вышний Волочек, ул. Московская, 76/37.</p>    
+    </div>
+    </div>
+    </div>
+        <!--6-->
+    <div class="attractions">
+        <center><h2 class="obozna">Казанский монастырь</h2></center>
+    <div class="block">
+    <div class="left">
+        <p class="attext" style="line-height:1.7;">Казанский женский монастырь был основан в 1881 г. и освящен в честь иконы Богоматери. Главный в комплексе – Собор Казанской иконы Богоматери, построенный в 1882 году по проекту знаменитого русского архитектора Александра Каминского. С момента основания монастырь переставал действовать лишь во времена правления советской власти. В 80-е гг. учреждение было возвращено Тверской епархии и после масштабного ремонта вновь открыло свои двери для нового поколения послушниц.</p>
+        <p class="adres" style="margin-top: 90px; margin-left: 289px;">АДРЕС: г. Вышний Волочек, ул. Красный Городок</p>    
+    </div>
+    <div class="right">
+        <img src="vv6.png" alt="">
+    </div>
+    </div>
+    </div>
+    <!--attractions конец--> 
+    <!--footer--> 
+    <footer>
+        <div class="logoniz">
+          <img id="foot" src="logo.png" alt="logo">
+          <p class="nazvanie">Вокруг света</p>
+        </div>
+        <p class="prava">© Вокруг света 2023 Все права защищены</p>
+      </footer>
+      <!--footer конец--> 
+
+    <a href="#" class="scrollup">Наверх</a>
+</body>
+</html>
