@@ -136,7 +136,7 @@ top: 2411px;
 
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 500;
+font-weight: 600;
 font-size: 42px;
 line-height: 51px;
 
@@ -184,7 +184,7 @@ position: absolute;
 width: 925px;
 height: 80px;
 left: 498px;
-top: 2546px;
+top: 2555px;
 
 background: #FFFFFF;
 border: 2px solid #576CBC;
@@ -219,18 +219,9 @@ line-height: 37px;
 color: #BABABA;
 
 }
-  .checkbox{
-    box-sizing: border-box;
 
-position: absolute;
-width: 34px;
-height: 34px;
-left: 577px;
-top: 2766px;
 
-border: 1px solid #0B2447;
-border-radius: 10px;
-  }
+
 
 
   

@@ -5,10 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вокруг света</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-</head>
+    <style>
+      .checkbox-container input[type="checkbox"] {
+        display: none;
+    }
+
+    .checkbox-container label {
+        position: absolute;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        left: 577px;
+        top: 2766px;
+        border: 1px solid #0B2447;
+        border-radius: 10px; /* Уменьшение радиуса скругления */
+        cursor: pointer;  
+    }
+
+    .checkbox-container input[type="checkbox"]:checked + label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+        border-radius: 5px;
+        background-color: #0B2447;
+    }
+
+    .submit-button {
+        box-sizing: border-box;
+        position: absolute;
+        width: 270px;
+        height: 75px;
+        left: 825px;
+        top: 2840px;
+        background: #576CBC;
+        border: 2px solid #576CBC;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .submit-button-text {
+        position: absolute;
+        width: 115px;
+        height: 30px; /* Установите подходящую высоту */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px; /* Установите подходящую высоту */
+        text-align: center;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+    }
+  </style>
+  </head>
 <body>
   <!--ВАНИНА ЗАЛУПА--> 
   <script type="text/javascript">
@@ -16,7 +75,7 @@
 
     $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
-    $('.scrollup').fadeIn();
+    $('.scrollup').fadeIn();  
     } else {
     $('.scrollup').fadeOut();
     }
@@ -121,16 +180,20 @@
         });
       </script>
       <!--конец томаса-->
-<div>
-  <h2 class="vopros" >Хочешь с нами?</h2>
-  <h3 class="vopros1">Оставь заявку, мы обязательно ответим!</h3>
-  <h4 class="soglasie">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных</h4>
-</div>
-<form>
-  <input class="polevvoda" type="text" id="name" placeholder="Ваше имя">
-  <input class="polevvoda1" type="text" id="name1" placeholder="Ваш e-mail">
-  <input class="checkbox" type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
-</form>
+      <div class="checkbox-container">
+        <h2 class="vopros">Хочешь с нами?</h2>
+        <h3 class="vopros1">Оставь заявку, мы обязательно ответим!</h3>
+        <h4 class="soglasie">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных</h4>
+        <form>
+            <input class="polevvoda" type="text" id="name" placeholder="Ваше имя">
+            <input class="polevvoda1" type="text" id="name1" placeholder="Ваш e-mail">
+            <input class="checkbox" type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+            <label for="politics"></label>
+        </form>
+        <button class="submit-button">
+          <span class="submit-button-text">Отправить</span>
+      </button>
+    </div>
 
 
 
